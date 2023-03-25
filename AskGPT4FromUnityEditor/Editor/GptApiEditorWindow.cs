@@ -16,10 +16,10 @@ public class GptApiEditorWindow : EditorWindow
     private string[] _modelOptions = { "gpt-3.5-turbo", "gpt-4" };
     private const string ApiEndpoint = "https://api.openai.com/v1/chat/completions";
 
-    [MenuItem("Window/GPT-4 API")]
+    [MenuItem("Window/GPT API")]
     public static void ShowWindow()
     {
-        GetWindow<GptApiEditorWindow>("GPT-4 API");
+        GetWindow<GptApiEditorWindow>("GPT API");
     }
 
     private void OnEnable()
