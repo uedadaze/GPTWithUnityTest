@@ -135,29 +135,3 @@ public class ScriptGeneratorWindow : EditorWindow
         Debug.Log("Generated script saved.");
     }
 }
-
-[Serializable]
-public class GptApiRequestBody
-{
-    public string model;
-    public List<Message> messages;
-}
-
-[Serializable]
-public class Message
-{
-    public string role;
-    public string content;
-}
-
-[Serializable]
-public class GptApiResponse
-{
-    public List<Choice> choices;
-}
-
-[Serializable]
-public class Choice
-{
-    public Message message;
-}
